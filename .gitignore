@@ -1,0 +1,7 @@
+# Files #
+.env
+demo_info.txt
+flag_avoidance.txt
+
+# Directories #
+openai_env/

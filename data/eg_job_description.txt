@@ -1,0 +1,118 @@
+Job description
+We are the voice of our clients. Equipped with intelligent technology, we are a global network of local specialists ambitious about making things work. We continuously evolve to be one step ahead by anticipating the newest technology and trends to improve the customer experience from reactive troubleshooting to active solution-finding. It is what we call Smarter People Experiences.
+We are 27,000 customer experience specialists at 50 contact centers and a large network of home agents, delivering services to international brands in various industries across 20 countries in 33 languages. We are TRANSCOM!
+
+
+
+
+
+Join us as a Data Engineer!
+
+Taking ownership over the external-facing data pipelines that are integral to our success
+
+Optimizing our offerings for efficiency and reliability at scale
+
+Identifying areas of architectural improvement to remove the potential for human error
+
+Collaborating with product and engineering teams to create innovative solutions to challenging problems
+
+Building out a testing framework to ensure uptime and reliability of data pipelines
+
+Understanding the analytics data we collect from our systems and how it relates to the business value being produced
+
+
+
+
+What’s in it for YOU!
+
+Career opportunities - growth within the company, both horizontal and vertical
+Personal and professional development: conferences, training, and coaching on the job
+Winning atmosphere and supportive team - we strive for collaborative, informal vibes with a focus on getting things done
+Opportunity to be innovative and pitch your own ideas
+Freedom in execution and forming of the organization
+Multicultural communication and best practice sharing
+A minimum of 23 vacation days (growing with tenure and parent status)
+Free parking space
+100% covered Multisport card or Moontop benefit system
+Additional health insurance
+Christmas and Easter bonus
+Team buildings
+Education budget set in each department
+Personalised development plan
+
+
+Job requirements
+.What we are looking for:
+
+Degree in Computer Science or related fields
+
+SQL knowledge is a must, as well as other programming languages such as (Python, Java, etc)
+
+Experience in Cloud environments, especially Google Cloud Platform
+
+Demonstrated experience with Apache Airflow and Apache Beam SDK are nice to have
+
+Experience with serverless databases, such as Google BigQuery
+
+Exposure to traditional ETL tools like SAP Data Services
+
+REST API development experience
+
+Extended experience with different relational and columnar databases
+
+Experience with visualization tools (Business Objects, Looker, Tableau, others) is nice to have
+
+Development practice following Agile methodology
+
+Self-organized and responsible for task delivery, guaranteeing excellent quality, as well as delivery respecting deadlines
+
+Superb problem-solving skills, with an analytical and data-driven mindset
+
+Excellent communication skills and a team player attitude
+
+Ability to work in a geographically and culturally diverse environment
+
+Ability to meet deadlines and work under pressure
+
+Ability to travel abroad if required and occasional off-hours availability
+
+Fluency in English is a must (both written and spoken). Other languages are a plus
+
+
+Personality profile:
+
+You don’t like leaving questions unanswered and you love exploring/understanding data
+
+You have relevant experience in creating pipelines for large data sets
+
+You are passionate about crafting clean code and have a steady foundation in coding and building data pipelines (especially in Python)
+
+You love to be the bridge between engineering and analysis to have an impact on the product
+
+You are interested in optimizing workflows and maintaining backend systems
+
+You seek to participate in continuous improvement efforts such as software development, planning, estimating, developing, testing
+
+
+
+
+
+What Life at Transcom is like!
+Transcom Worldwide is one of the leading global customer experience companies, supplying local and global clients in multiple markets within our global footprint with forward-leaning customer experience solutions via different channels like voice, chat, social media etc. We are 30,000 customer experience specialists at 69 offices across 26 countries, delivering services in 33 languages to international brands in various industry verticals. At Transcom, we’re relentlessly committed. To our clients and each other. Every day, someone starts their journey with Transcom. Taking the potential they have today, and turning it into skills for the future. Getting recognized for working hard, being a team player, and supporting others. Championing positive, lasting change in their teams and communities. That’s just how we are at Transcom. Here we care, and root for each other. You’re included, just as you are, from day one. And with the right mindset, there’s no end to how far we can go together.
+
+
+At Transcom, we follow our Values to a T, we live them, we breathe them, it is what we base our day to day work life on (and it is not just an empty promise, ask anyone).
+
+We’re here to support
+
+We keep our promises
+
+We come as we are
+
+We’re team players
+
+We’re lifelong learners
+
+
+
+We’re sure you loved everything you’ve read and heard, and would definitely love to learn more. In that case, apply, come talk to us, we are an open book. You will get all the nitty-gritty details, no hidden agendas, no false promises. What you hear/see, is what you get.
