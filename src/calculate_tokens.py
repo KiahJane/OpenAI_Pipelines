@@ -37,55 +37,48 @@ def count_tokens(prompt_input, encoding):
     """
     num_tokens = 0
 
-    if isinstance(prompt_input, str):
-        #print(f"Handled a string: {input}")
-
-        tokens_int = encoding.encode(prompt_input)
-        num_tokens += len(tokens_int)
-        # Obtain the corresponding token string for each integer token
+    def tokenize_text(text, encoding):
+        """ Tokenize a given text.
+        
+        Params:
+            text (str): The text input to process.
+            encoding (class): tiktoken.core.Encoding -- encoding for an OpenAI model
+        Returns:
+            (int): The number of tokens in the text.
+        """
+        # Tokenize the text
+        tokens_int = encoding.encode(text)
+        # View the corresponding token string for each integer token
         print("Token String-Integer Pairs:\n",
               [encoding.decode_single_token_bytes(token) for token in tokens_int])
-        # every reply is primed with <|start|>assistant<|message|>
-        num_tokens += 3
+        return len(tokens_int)
 
+    # Check if prompt_input is string
+    if isinstance(prompt_input, str):
+        #print(f"Handled a string: {input}")        
+        num_tokens += tokenize_text(prompt_input, encoding) + 3 # (+3): every reply is primed with <|start|>assistant<|message|>
         return num_tokens
 
+    # Check if prompt_input is list
     if isinstance(prompt_input, list):
         # Check if the list contains strings
         if all(isinstance(i, str) for i in prompt_input):
             #print(f"Handled a list of strings: {input}")
-
             for text in prompt_input:
-                tokens_int = encoding.encode(text)
-                num_tokens += len(tokens_int)
-                print(f"{len(tokens_int)} is the number of tokens included in '{text}'")
-                # Obtain the corresponding token string for each integer token
-                print("Token String-Integer Pairs:\n",
-                      [encoding.decode_single_token_bytes(token) for token in tokens_int])
-                # every reply is primed with <|start|>assistant<|message|>
-                num_tokens += 3
-
+                num_tokens += tokenize_text(text, encoding)
+            num_tokens += 3
             return num_tokens
 
-        # Check if the list contains dictionaries
+        # Check if list contains dictionaries
         if (all(isinstance(i, dict) for i in prompt_input) and
             all(all(isinstance(val, str) for val in i.values()) for i in prompt_input)):
             #print(f"Handled a list of dictionaries of strings: {input}")
 
-            # every message follows <|start|>{role/name}\n{content}<|end|>\n
-            tokens_per_message = 4
-            num_tokens += tokens_per_message
+            num_tokens += 4  # (+4): every message follows <|start|>{role/name}\n{content}<|end|>\n
             for message in prompt_input:
                 for key, value in message.items():
-                    tokens_int = encoding.encode(value)
-                    num_tokens += len(tokens_int)
-                    print(f"{len(tokens_int)} is the number of token included in {key}")
-                    # Obtain the corresponding token string for each integer token
-                    print("Token String-Integer Pairs:\n",
-                          [encoding.decode_single_token_bytes(token) for token in tokens_int])
-                # every reply is primed with <|start|>assistant<|message|>
+                    num_tokens += tokenize_text(prompt_input, encoding)
                 num_tokens += 3
-
             return num_tokens
 
         if prompt_input is None:
